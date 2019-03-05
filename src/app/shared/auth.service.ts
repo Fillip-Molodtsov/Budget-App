@@ -1,0 +1,16 @@
+export class AuthService {
+    private isAuthorized = false;
+
+    login() {
+        this.isAuthorized = true;
+    }
+
+    logout() {
+        this.isAuthorized = false;
+        window.localStorage.clear();
+    }
+
+    isLogged() {
+        return this.isAuthorized;
+    }
+}
