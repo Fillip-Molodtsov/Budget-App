@@ -21,6 +21,11 @@ export class CategoryService {
         return this.httpClient.get(`${this.apiService.getURLDataBase()}categories`);
     }
 
+    getCategoryByID(id: number): Observable<Category> {
+        // @ts-ignore
+        return this.httpClient.get(`${this.apiService.getURLDataBase()}categories/${id}`);
+    }
+
     putCategory(category: Category): Observable<Category> {
         // @ts-ignore
         return this.httpClient.put(`${this.apiService.getURLDataBase()}categories/${category.id}`, category);

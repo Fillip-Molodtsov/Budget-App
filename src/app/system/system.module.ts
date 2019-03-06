@@ -21,6 +21,11 @@ import { AddCategoryComponent } from './records-page/add-category/add-category.c
 import { EditCategoryComponent } from './records-page/edit-category/edit-category.component';
 import {CategoryService} from './shared/services/category.service';
 import {MyEventService} from './shared/services/my-event.service';
+import { HistoryChartComponent } from './history-page/history-chart/history-chart.component';
+import { HistoryDetailComponent } from './history-page/history-detail/history-detail.component';
+import { HistoryEventsComponent } from './history-page/history-events/history-events.component';
+import { HistoryFilterComponent } from './history-page/history-filter/history-filter.component';
+import { FilterEventsPipe } from './shared/pipes/filter-events.pipe';
 
 @NgModule({
     declarations: [
@@ -37,14 +42,19 @@ import {MyEventService} from './shared/services/my-event.service';
         MomentPipe,
         AddEventComponent,
         AddCategoryComponent,
-        EditCategoryComponent
+        EditCategoryComponent,
+        HistoryChartComponent,
+        HistoryDetailComponent,
+        HistoryEventsComponent,
+        HistoryFilterComponent,
+        FilterEventsPipe
     ],
     imports: [
         CommonModule,
         SystemRoutingModule,
         SharedModule
     ],
-    providers: [BillPageService, ApiService, CategoryService,MyEventService]
+    providers: [BillPageService, ApiService, CategoryService, MyEventService]
 })
 export class SystemModule {
 }

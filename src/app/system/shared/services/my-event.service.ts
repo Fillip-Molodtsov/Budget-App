@@ -21,4 +21,9 @@ export class MyEventService {
         // @ts-ignore
         return this.httpClient.get(`${this.apiService.getURLDataBase()}events`);
     }
+
+    getEventsByID(id: number): Observable<MyEvent> {
+        // @ts-ignore
+        return this.httpClient.get(`${this.apiService.getURLDataBase()}events/${id}`);
+    }
 }

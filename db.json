@@ -26,7 +26,7 @@
     }
   ],
   "bill": {
-    "value": 9980,
+    "value": 8450,
     "currency": "EUR"
   },
   "categories": [
@@ -44,11 +44,6 @@
       "name": "Машина",
       "capacity": 7000,
       "id": 3
-    },
-    {
-      "name": "Девушка",
-      "capacity": 100,
-      "id": 4
     }
   ],
   "events": [
@@ -57,7 +52,7 @@
       "type": "income",
       "amount": 1250,
       "category": 2,
-      "date": "12.06.2017 19:49:02",
+      "date": "6.03.2019 19:49:02",
       "description": "Подарили еду в гостях"
     },
     {
@@ -65,14 +60,14 @@
       "type": "outcome",
       "amount": 1300,
       "category": 1,
-      "date": "13.06.2017 19:49:02",
+      "date": "6.03.2019 19:49:02",
       "description": "Купил посудомоечную машину"
     },
     {
       "type": "income",
       "amount": 1480,
       "category": 2,
-      "date": "17.06.2017 14:00:48",
+      "date": "6.03.2019 14:00:48",
       "id": 3,
       "description": "Поход в окей с баллами. Бесплатная еда"
     },
@@ -80,7 +75,7 @@
       "type": "outcome",
       "amount": 2470,
       "category": 2,
-      "date": "17.06.2017 14:00:58",
+      "date": "5.03.2019 14:00:58",
       "id": 4,
       "description": "Закупка на неделю"
     },
@@ -88,9 +83,17 @@
       "type": "outcome",
       "amount": 4000,
       "category": 3,
-      "date": "10.06.2017 14:01:58",
+      "date": "4.03.2019 14:01:58",
       "id": 5,
       "description": "Заправка + проход ТО"
+    },
+    {
+      "type": "outcome",
+      "amount": 1500,
+      "category": 2,
+      "date": "06.03.2019 22:11:54",
+      "description": "sdfbstrb",
+      "id": 6
     }
   ]
 }
