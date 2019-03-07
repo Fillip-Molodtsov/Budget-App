@@ -8,7 +8,7 @@
     </button>
   </div>
 </div>
-<h2 *ngIf="!isLoaded">Loading...</h2>
+<h2 *ngIf="!isLoaded"><app-loader></app-loader></h2>
 <section class="section" *ngIf="isLoaded">
   <div class="row">
     <app-bill-card [bill]="bill" [currency]="currency"></app-bill-card>

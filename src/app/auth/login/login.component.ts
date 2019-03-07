@@ -25,6 +25,9 @@ export class LoginComponent implements OnInit {
             if (params.permission) {
                 this.showMessage('Вы вошли в систему', 'success');
             }
+            if (params.isDenied) {
+                this.showMessage('Требуется вход в систему', 'warning');
+            }
         });
         this.form = new FormGroup({
             'email': new FormControl(null, [Validators.required, Validators.email]),

@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {NgxChartsModule} from '@swimlane/ngx-charts';
+import { LoaderComponent } from './components/loader/loader.component';
 
 @NgModule({
   imports: [
@@ -11,7 +12,9 @@ import {NgxChartsModule} from '@swimlane/ngx-charts';
   exports: [
     FormsModule,
     ReactiveFormsModule,
-    NgxChartsModule
-  ]
+    NgxChartsModule,
+    LoaderComponent
+  ],
+  declarations: [LoaderComponent]
 })
 export class SharedModule { }
