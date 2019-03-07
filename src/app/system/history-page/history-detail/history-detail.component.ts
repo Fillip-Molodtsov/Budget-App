@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, HostBinding, OnInit} from '@angular/core';
 import {MyEventService} from '../../shared/services/my-event.service';
 import {CategoryService} from '../../shared/services/category.service';
 import {Subscription} from 'rxjs';
@@ -10,7 +10,7 @@ import {Category} from '../../shared/models/category.model';
 @Component({
     selector: 'app-history-detail',
     templateUrl: './history-detail.component.html',
-    styleUrls: ['./history-detail.component.scss']
+    styleUrls: ['./history-detail.component.scss'],
 })
 export class HistoryDetailComponent implements OnInit {
     sub1: Subscription;
