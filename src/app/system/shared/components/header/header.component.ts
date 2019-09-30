@@ -1,4 +1,4 @@
-import {Component, OnChanges, OnInit} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {User} from '../../../../shared/models/user.model';
 import {AuthService} from '../../../../shared/auth.service';
 import {Router} from '@angular/router';

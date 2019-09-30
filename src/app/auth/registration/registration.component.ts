@@ -45,7 +45,7 @@ export class RegistrationComponent implements OnInit {
             .subscribe(() => {
                 this.router.navigate(['/login'], {
                     queryParams: {
-                        permission: true // todo redirect to bill-page
+                        permission: true,
                     }
                 });
             });

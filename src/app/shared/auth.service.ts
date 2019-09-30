@@ -1,4 +1,5 @@
 export class AuthService {
+
     private isAuthorized = false;
 
     login() {
@@ -11,6 +12,7 @@ export class AuthService {
     }
 
     isLogged() {
-        return this.isAuthorized;
+        const user = JSON.parse(window.localStorage.getItem('user'));
+        return this.isAuthorized || user;
     }
 }

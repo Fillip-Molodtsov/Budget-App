@@ -23,10 +23,22 @@
       "password": "12345678",
       "name": "WASABI",
       "id": 4
+    },
+    {
+      "email": "1@qw.ua",
+      "password": "12345678",
+      "name": "Boi",
+      "id": 5
+    },
+    {
+      "email": "q1@qw.u",
+      "password": "12345678",
+      "name": "Філліп Вега Молодцов",
+      "id": 6
     }
   ],
   "bill": {
-    "value": 8450,
+    "value": 6750,
     "currency": "EUR"
   },
   "categories": [
@@ -44,6 +56,16 @@
       "name": "Машина",
       "capacity": 7000,
       "id": 3
+    },
+    {
+      "name": "Hello",
+      "capacity": 17697,
+      "id": 4
+    },
+    {
+      "name": "Hello",
+      "capacity": 1787078057,
+      "id": 5
     }
   ],
   "events": [
@@ -94,6 +116,30 @@
       "date": "06.03.2019 22:11:54",
       "description": "sdfbstrb",
       "id": 6
+    },
+    {
+      "type": "outcome",
+      "amount": 1700,
+      "category": 5,
+      "date": "15.03.2019 14:22:32",
+      "description": "htrej",
+      "id": 7
+    },
+    {
+      "type": "income",
+      "amount": 1000,
+      "category": 1,
+      "date": "16.09.2019 18:55:22",
+      "description": "erywe5rh",
+      "id": 8
+    },
+    {
+      "type": "outcome",
+      "amount": 1000,
+      "category": 1,
+      "date": "16.09.2019 18:55:36",
+      "description": "erywe5rh",
+      "id": 9
     }
   ]
 }

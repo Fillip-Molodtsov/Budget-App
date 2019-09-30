@@ -6,6 +6,7 @@ import {Message} from '../../shared/models/message.model';
 import {AuthService} from '../../shared/auth.service';
 import {ActivatedRoute, Params, Router} from '@angular/router';
 import {fadeStateTrigger} from '../../shared/animations/fade.animation';
+import {LoginForm} from '../../shared/models/loginForm.model';
 
 @Component({
     selector: 'app-login',
@@ -14,7 +15,7 @@ import {fadeStateTrigger} from '../../shared/animations/fade.animation';
     animations: [fadeStateTrigger]
 })
 export class LoginComponent implements OnInit {
-
+    user: User;
     form: FormGroup;
     message: Message;
 
@@ -22,6 +23,8 @@ export class LoginComponent implements OnInit {
     }
 
     ngOnInit() {
+        this.user = JSON.parse(window.localStorage.getItem('user'));
+        if (this.user) { this.checkAndRedirect(this.user); }
         this.message = new Message('danger', '');
         this.route.queryParams.subscribe((params: Params) => {
             if (params.permission) {
@@ -44,6 +47,10 @@ export class LoginComponent implements OnInit {
 
     onSubmit() {
         const data = this.form.value;
+        this.checkAndRedirect(data);
+    }
+
+    checkAndRedirect(data: LoginForm | User) {
         this.userService.getUserByEmail(data.email).subscribe((user: User) => {
             if (user) {
                 if (user.password === data.password) {
