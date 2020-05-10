@@ -55,7 +55,8 @@ export class AddEventComponent implements OnInit {
                 bill.value = amount + bill.value;
             } else {
                 if (amount > bill.value) {
-                    this.showMessage(`Ваш рахунок менший, ніж сума, яка віднімається, на${amount - bill.value} ${bill.currency}`, 'danger');
+                    this.showMessage(`Ваш рахунок менший, ніж сума, яка віднімається, на ${amount - bill.value} ${bill.currency}`,
+                        'danger');
                     return;
                 } else {
                     bill.value = bill.value - amount;

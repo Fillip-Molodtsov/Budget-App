@@ -24,7 +24,7 @@
         <input type="text"
                id="e-category-name"
                class="form-control"
-               [ngModel] = "currentCategory.name"
+               [ngModel] = "currentCategory?.name"
                required
                #name="ngModel"
                name="name">
@@ -37,7 +37,7 @@
         <input type="number"
                id="e-category-value"
                class="form-control"
-               [ngModel]="currentCategory.capacity"
+               [ngModel]="currentCategory?.capacity"
                required
                min="1"
                #capacity="ngModel"
