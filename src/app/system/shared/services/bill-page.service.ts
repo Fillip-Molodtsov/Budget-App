@@ -23,6 +23,6 @@ export class BillPageService {
 
     getCurrency(): Observable<any> {
         return this.httpClient
-            .get(`${this.apiService.getURLFixer()}latest?access_key=${this.apiService.getFixer()}&symbols=USD,RUB&format=1`);
+            .get(`${this.apiService.getURLFixer()}latest?access_key=${this.apiService.getFixer()}&symbols=USD,GBP&format=1`);
     }
 }

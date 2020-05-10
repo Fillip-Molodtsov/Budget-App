@@ -10,13 +10,13 @@ export class BillCardComponent implements OnInit {
     @Input('bill') bill: Bill;
     @Input('currency') currency: any;
     dollar: number;
-    rubli: number;
+    gbp: number;
     constructor() {
     }
 
     ngOnInit() {
         this.dollar = this.bill.value * this.currency.rates['USD'];
-        this.rubli = this.bill.value * this.currency.rates['RUB'];
+        this.gbp = this.bill.value * this.currency.rates['GBP'];
     }
 
 }
