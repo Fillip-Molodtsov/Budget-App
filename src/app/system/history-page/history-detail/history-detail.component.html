@@ -3,7 +3,7 @@
   <div class="title-block">
     <h3 class="title">
       <a [routerLink]="['/system/history']"><i class="fa fa-arrow-left"></i></a>
-      Страница записи {{event.id}}
+      Сторінка запису {{event.id}}
       <span class="sparkline bar"></span>
     </h3>
   </div>
@@ -17,14 +17,15 @@
       }">
           <div class="card-header">
             <div class="header-block">
-              <p class="title">{{event.type ==='income'? 'Доход':'Расход'}}</p>
+
+              <p class="title">{{event.type ==='income'? 'Дохід':'Витрати'}}</p>
             </div>
           </div>
           <div class="card-block">
             <ul>
-              <li>Сумма: <strong>{{event.amount}} &#8364;</strong></li>
-              <li>Категория: <strong>{{categoryName}}</strong></li>
-              <li>Описание:<br> <strong>{{event.description}}</strong></li>
+              <li>Сума: <strong>{{event.amount}} &#8364;</strong></li>
+              <li>Категорія: <strong>{{categoryName}}</strong></li>
+              <li>Опис:<br> <strong>{{event.description}}</strong></li>
             </ul>
           </div>
           <div class="card-footer">{{event.date}}</div>

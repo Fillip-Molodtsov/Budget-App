@@ -39,7 +39,7 @@ export class EditCategoryComponent implements OnInit, OnDestroy {
         const category = new Category(name, +capacity, this.categoryCurrentID);
         this.sub1 = this.categoryService.putCategory(category).subscribe(res => {
             this.categoryEdit.emit(res);
-            this.message.text = 'Категория отредактирована';
+            this.message.text = 'Категорія відредагована';
             window.setTimeout(() => this.message.text = '', 1000);
         });
     }

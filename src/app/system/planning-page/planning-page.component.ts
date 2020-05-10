@@ -67,6 +67,6 @@ export class PlanningPageComponent implements OnInit {
     }
 
     returnLeftOverString(c: Category): string {
-        return this.getPercentage(c) === 100 ? 'переиспользовал' : 'осталось';
+        return this.getPercentage(c) === 100 ? 'перевикористав' : 'залишилося';
     }
 }

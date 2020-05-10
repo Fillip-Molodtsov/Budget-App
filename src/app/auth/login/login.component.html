@@ -1,4 +1,4 @@
-<p class="text-xs-center">Войдите для работы</p>
+<p class="text-xs-center">Ввійдіть для роботи</p>
 <div
     @fade
     class="alert alert-{{message.type}}"
@@ -13,12 +13,12 @@
       type="text"
       class="form-control underlined"
       id="email"
-      placeholder="Введите ваш email"
+      placeholder="Введіть ваш email"
       formControlName="email"
     >
     <span class="form-help-text" *ngIf="form.get('email').invalid && form.get('email').touched">
-      <span *ngIf="form.get('email')['errors']['required']">Введите ваш имейл</span>
-      <span *ngIf="form.get('email')['errors']['email']">Неправильный формат имейла</span>
+      <span *ngIf="form.get('email')['errors']['required']">Введіть ваш email</span>
+      <span *ngIf="form.get('email')['errors']['email']">Неравильний формат email</span>
     </span>
   </div>
   <div class="form-group"
@@ -32,18 +32,18 @@
       formControlName="password"
     >
     <span class="form-help-text" *ngIf="form.get('password').invalid && form.get('password').touched">
-      <span *ngIf="form.get('password')['errors']['required']">Введите ваш пароль</span>
-      <span *ngIf="form.get('password')['errors']['minlength']">Пароль должен состоять из
-        {{form.get('password')['errors']['minlength']['requiredLength']}} символов
+      <span *ngIf="form.get('password')['errors']['required']">Введіть ваш пароль</span>
+      <span *ngIf="form.get('password')['errors']['minlength']">Пароль повинен містити
+        {{form.get('password')['errors']['minlength']['requiredLength']}} символів
       </span>
     </span>
   </div>
   <div class="form-group" >
-    <button type="submit" [disabled]="form.invalid" class="btn btn-block btn-primary">Войти</button>
+    <button type="submit" [disabled]="form.invalid" class="btn btn-block btn-primary">Ввійти</button>
   </div>
   <div class="form-group">
     <p class="text-muted text-xs-center">
-      Нет аккаунта? <a [routerLink]="'/registration'">Зарегистрироваться!</a>
+      Немає облікового запису? <a [routerLink]="'/registration'">Зареєструватися!</a>
     </p>
   </div>
 </form>

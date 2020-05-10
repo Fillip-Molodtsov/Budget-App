@@ -6,11 +6,11 @@
         <button type="button" class="close" (click)="onCancel()">
           <span>×</span>
         </button>
-        <h4 class="modal-title">Фильтр</h4>
+        <h4 class="modal-title">Фільтр</h4>
       </div>
       <div class="modal-body">
         <div class="form-group">
-          <label class="control-label" for="period">Выберите период</label>
+          <label class="control-label" for="period">Оберіть період</label>
           <select class="form-control"
                   id="period"
                   [(ngModel)]="selectedPeriod">
@@ -21,7 +21,7 @@
           </select>
         </div>
         <div class="form-group">
-          <label class="control-label">Выберите тип события</label>
+          <label class="control-label">Оберіть тип події</label>
           <div>
             <label *ngFor="let t of eventTypes">
               <input
@@ -36,7 +36,7 @@
           </div>
         </div>
         <div class="form-group">
-          <label class="control-label">Выберите категории</label>
+          <label class="control-label">Оберіть категорії</label>
           <div>
             <label *ngFor="let c of categories">
               <input
@@ -51,8 +51,8 @@
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" (click)="onCancel()">Отмена</button>
-          <button type="button" class="btn btn-primary" (click)="onApply()">Применить</button>
+          <button type="button" class="btn btn-secondary" (click)="onCancel()">Скасувати</button>
+          <button type="button" class="btn btn-primary" (click)="onApply()">Застосувати</button>
         </div>
       </div>
     </div>

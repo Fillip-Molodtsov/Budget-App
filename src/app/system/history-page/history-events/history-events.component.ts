@@ -10,7 +10,7 @@ import {MyEvent} from '../../shared/models/myEvent.model';
 export class HistoryEventsComponent implements OnInit {
     @Input() categories: Category[];
     @Input() events: MyEvent[];
-    placeholder = 'Сумма';
+    placeholder = 'Сума';
     parameter = 'amount';
     search = '';
 
@@ -22,9 +22,9 @@ export class HistoryEventsComponent implements OnInit {
 
     changeFilter(filter: string) {
         const nameMap = {
-            amount: 'Сумма',
+            amount: 'Сума',
             date: 'Дата',
-            category: 'Категория',
+            category: 'Категорія',
             type: 'Тип',
         };
         this.placeholder = nameMap[filter];
@@ -37,7 +37,7 @@ export class HistoryEventsComponent implements OnInit {
     }
 
     getType(event: MyEvent) {
-        return event.type === 'income' ? 'Доход' : 'Расход';
+        return event.type === 'income' ? 'Дохід' : 'Витрати';
     }
 
     getLabelType(event: MyEvent) {

@@ -1,4 +1,4 @@
-<p class="text-xs-center">Регистрация для получения доступа</p>
+<p class="text-xs-center">Реєстрація для отримання доступу</p>
 <form [formGroup]="form" (ngSubmit)="onSubmit()">
   <div class="form-group"
        [ngClass]="{'has-error': form.get('email').invalid && form.get('email').touched}">
@@ -7,13 +7,13 @@
             type="text"
             class="form-control underlined"
             id="email"
-            placeholder="Введите ваш email"
+            placeholder="Введіть ваш email"
             formControlName="email"
     >
     <span class="form-help-text" *ngIf="form.get('email').invalid && form.get('email').touched">
-      <span *ngIf="form.get('email')['errors']['required']">Введите ваш имейл</span>
-      <span *ngIf="form.get('email')['errors']['email']">Неправильный формат имейла</span>
-      <span *ngIf="form.get('email')['errors']['exist']">Уже существует такой имейл</span>
+      <span *ngIf="form.get('email')['errors']['required']">Введіть ваш email</span>
+      <span *ngIf="form.get('email')['errors']['email']">Неправильний формат email</span>
+      <span *ngIf="form.get('email')['errors']['exist']">Уже існує такий email</span>
     </span>
   </div>
   <div class="form-group"
@@ -27,40 +27,40 @@
             formControlName="password"
     >
     <span class="form-help-text" *ngIf="form.get('password').invalid && form.get('password').touched">
-      <span *ngIf="form.get('password')['errors']['required']">Введите ваш пароль</span>
-      <span *ngIf="form.get('password')['errors']['minlength']">Пароль должен состоять из
-        {{form.get('password')['errors']['minlength']['requiredLength']}} символов
+      <span *ngIf="form.get('password')['errors']['required']">Введіть ваш пароль</span>
+      <span *ngIf="form.get('password')['errors']['minlength']">Пароль повинен містити
+        {{form.get('password')['errors']['minlength']['requiredLength']}} символів
       </span>
     </span>
   </div>
   <div class="form-group"
        [ngClass]="{'has-error': form.get('name').invalid && form.get('name').touched}">
-    <label for="name">Имя</label>
+    <label for="name">Ім'я</label>
     <input
       type="text"
       class="form-control underlined"
       id="name"
-      placeholder="Введите имя"
+      placeholder="Введіть ім'я"
       formControlName="name"
     >
     <span class="form-help-text" *ngIf="form.get('name').invalid && form.get('name').touched">
-      <span *ngIf="form.get('name')['errors']['required']">Введите ваш никнейм</span>
+      <span *ngIf="form.get('name')['errors']['required']">Введіть ваш нікнейм</span>
     </span>
   </div>
   <div class="form-group">
     <label for="agree">
       <input class="checkbox" id="agree" type="checkbox" formControlName="agree">
-      <span>Согласен с правилами</span>
+      <span>Погоджуюся з правилами</span>
     </label>
   </div>
   <div class="form-group" >
-    <button type="submit" [disabled]="form.invalid" class="btn btn-block btn-primary">Зарегистрироваться</button>
+    <button type="submit" [disabled]="form.invalid" class="btn btn-block btn-primary">Зареєстуватися</button>
   </div>
   <div class="form-group">
     <p class="text-muted text-xs-center">
-      Уже есть аккаунт?
+      Уже є обліковий запис?
       <a [routerLink]="'/login'">
-        Войти!
+        Ввійти!
       </a>
     </p>
   </div>

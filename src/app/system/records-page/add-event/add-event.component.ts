@@ -19,11 +19,11 @@ export class AddEventComponent implements OnInit {
     types = [
         {
             value: 'income',
-            label: 'Доход'
+            label: 'Дохід'
         },
         {
             value: 'outcome',
-            label: 'Расход'
+            label: 'Витрати'
         }
     ];
     message: Message;
@@ -55,7 +55,7 @@ export class AddEventComponent implements OnInit {
                 bill.value = amount + bill.value;
             } else {
                 if (amount > bill.value) {
-                    this.showMessage(`Ваш счет меньше отнимаемой суммы на ${amount - bill.value} ${bill.currency}`, 'danger');
+                    this.showMessage(`Ваш рахунок менший, ніж сума, яка віднімається, на${amount - bill.value} ${bill.currency}`, 'danger');
                     return;
                 } else {
                     bill.value = bill.value - amount;
@@ -64,7 +64,7 @@ export class AddEventComponent implements OnInit {
             this.billService.patchBill(bill)
                 .pipe(mergeMap(() => this.myEventService.postEvent(event)))
                 .subscribe(() => {
-                    this.showMessage('Событие обработано', 'success');
+                    this.showMessage('Подію опрацьовано', 'success');
                     form.setValue({
                         category,
                         amount: 0,

@@ -16,12 +16,12 @@ export class HistoryFilterComponent implements OnInit {
     selectedPeriod = 'd';
     periodTypes = [
         {value: 'd', label: 'день'},
-        {value: 'w', label: 'неделя'},
-        {value: 'M', label: 'месяц'}
+        {value: 'w', label: 'тиждень'},
+        {value: 'M', label: 'місяць'}
     ];
     eventTypes = [
-        {value: 'income', label: 'доход'},
-        {value: 'outcome', label: 'расход'}
+        {value: 'income', label: 'дохід'},
+        {value: 'outcome', label: 'витрати'}
     ];
 
     constructor() {

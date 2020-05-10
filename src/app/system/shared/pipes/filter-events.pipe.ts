@@ -19,7 +19,7 @@ export class FilterEventsPipe implements PipeTransform {
             if (filter === 'category') {
                 elc[filter] = elc.categoryName;
             } else if (filter === 'type') {
-                elc[filter] = elc[filter] === 'income' ? 'доход' : 'расход';
+                elc[filter] = elc[filter] === 'income' ? 'дохід' : 'витрати';
             }
             return elc[filter].toLowerCase().indexOf(search.toLowerCase()) !== -1;
         });
