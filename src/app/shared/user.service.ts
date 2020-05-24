@@ -5,7 +5,7 @@ import {Observable} from 'rxjs';
 import {User} from './models/user.model';
 import {map} from 'rxjs/operators';
 import {ApiService} from '../system/shared/services/api.service';
-
+// Обробка інформації про користувача
 @Injectable({
     providedIn: 'root',
 })

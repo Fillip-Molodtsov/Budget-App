@@ -1,3 +1,4 @@
+// клас повідомлення
 export class Message {
     constructor(
         public type: String,

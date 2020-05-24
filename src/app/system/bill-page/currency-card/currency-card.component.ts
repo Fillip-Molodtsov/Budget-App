@@ -1,5 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-
+// поточний рахунок у різних валютах
 @Component({
     selector: 'app-currency-card',
     templateUrl: './currency-card.component.html',

@@ -2,7 +2,7 @@ import {Component, HostBinding, OnInit} from '@angular/core';
 import {ActivatedRoute, Params, Router} from '@angular/router';
 import {logger} from 'codelyzer/util/logger';
 import {fadeStateTrigger} from '../../shared/animations/fade.animation';
-
+// налаштування авторизації
 @Component({
     selector: 'app-auth',
     templateUrl: './auth.component.html',

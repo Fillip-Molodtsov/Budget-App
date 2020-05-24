@@ -4,7 +4,7 @@ import {HttpClient} from '@angular/common/http';
 
 import {ApiService} from './api.service';
 import {Bill} from '../models/bill.model';
-
+// налаштування для сторінки рахунку
 @Injectable({
     providedIn: 'root'
 })

@@ -2,7 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {User} from '../../../../shared/models/user.model';
 import {AuthService} from '../../../../shared/auth.service';
 import {Router} from '@angular/router';
-
+// Налаштування дати, часу та імені користувача на верхній панелі
 @Component({
     selector: 'app-header',
     templateUrl: './header.component.html',

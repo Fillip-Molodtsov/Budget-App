@@ -3,7 +3,7 @@ import {FormControl, FormGroup, Validators} from '@angular/forms';
 import {UserService} from '../../shared/user.service';
 import {User} from '../../shared/models/user.model';
 import {Router} from '@angular/router';
-
+// налаштування реєстрації
 @Component({
     selector: 'app-registration',
     templateUrl: './registration.component.html',

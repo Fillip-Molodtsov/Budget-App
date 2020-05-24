@@ -5,7 +5,7 @@ import {CategoryService} from '../shared/services/category.service';
 import {MyEventService} from '../shared/services/my-event.service';
 import {forkJoin, Subscription} from 'rxjs';
 import * as moment from 'moment';
-
+// Сторінказ історією
 @Component({
     selector: 'app-history-page',
     templateUrl: './history-page.component.html',

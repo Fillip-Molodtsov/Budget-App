@@ -1,5 +1,5 @@
 import {Injectable} from '@angular/core';
-
+// налаштування api
 @Injectable({
     providedIn: 'root'
 })

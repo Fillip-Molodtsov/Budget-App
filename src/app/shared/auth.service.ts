@@ -1,3 +1,4 @@
+// ресурси для авторизації
 export class AuthService {
 
     private isAuthorized = false;

@@ -3,7 +3,7 @@ import {HttpClient} from '@angular/common/http';
 import {MyEvent} from '../models/myEvent.model';
 import {Observable} from 'rxjs';
 import {ApiService} from './api.service';
-
+// налаштування для сторінки подій
 @Injectable({
     providedIn: 'root'
 })

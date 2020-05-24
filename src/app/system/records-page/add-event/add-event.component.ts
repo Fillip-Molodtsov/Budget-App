@@ -9,6 +9,7 @@ import {Message} from '../../../shared/models/message.model';
 import {MyEventService} from '../../shared/services/my-event.service';
 import {mergeMap} from 'rxjs/operators';
 
+// Додавання запису
 @Component({
     selector: 'app-add-event',
     templateUrl: './add-event.component.html',

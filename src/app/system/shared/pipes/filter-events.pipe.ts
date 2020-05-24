@@ -1,3 +1,4 @@
+// фільтрація записів
 import {Pipe, PipeTransform} from '@angular/core';
 import {MyEvent} from '../models/myEvent.model';
 

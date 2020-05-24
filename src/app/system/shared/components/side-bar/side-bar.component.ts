@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+// Налаштування бокової панелі
 @Component({
   selector: 'app-side-bar',
   templateUrl: './side-bar.component.html',

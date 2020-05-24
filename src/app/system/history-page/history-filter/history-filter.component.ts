@@ -1,7 +1,7 @@
 import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {Category} from '../../shared/models/category.model';
 import {Target} from '@angular/compiler';
-
+// Фільтр по записах
 @Component({
     selector: 'app-history-filter',
     templateUrl: './history-filter.component.html',

@@ -4,7 +4,7 @@ import {Category} from '../../shared/models/category.model';
 import {CategoryService} from '../../shared/services/category.service';
 import {Message} from '../../../shared/models/message.model';
 import {Subscription} from 'rxjs';
-
+// редагування категорій
 @Component({
     selector: 'app-edit-category',
     templateUrl: './edit-category.component.html',

@@ -5,10 +5,22 @@
       "password": "12345678",
       "name": "Філліп",
       "id": 1
+    },
+    {
+      "email": "test@2",
+      "password": "12345678",
+      "name": "Василина",
+      "id": 1
+    },
+    {
+      "email": "test@3",
+      "password": "1234567890",
+      "name": "Оксана Валентинівна",
+      "id": 2
     }
   ],
   "bill": {
-    "value": 1,
+    "value": 2201,
     "currency": "EUR"
   },
   "categories": [
@@ -16,6 +28,16 @@
       "name": "Дім",
       "capacity": 100000,
       "id": 1
+    },
+    {
+      "name": "Розваги",
+      "capacity": 1000,
+      "id": 2
+    },
+    {
+      "name": "Навчання",
+      "capacity": 2000,
+      "id": 3
     }
   ],
   "events": [
@@ -26,6 +48,38 @@
       "date": "10.05.2020 19:15:42",
       "description": "знайшов євро",
       "id": 1
+    },
+    {
+      "type": "income",
+      "amount": 1300,
+      "category": 1,
+      "date": "20.05.2020 12:33:49",
+      "description": "Стипендія",
+      "id": 2
+    },
+    {
+      "type": "outcome",
+      "amount": 200,
+      "category": 2,
+      "date": "20.05.2020 12:35:56",
+      "description": "похід в планетарій",
+      "id": 3
+    },
+    {
+      "type": "income",
+      "amount": 1300,
+      "category": 3,
+      "date": "20.05.2020 12:37:36",
+      "description": "Стипендія",
+      "id": 4
+    },
+    {
+      "type": "outcome",
+      "amount": 200,
+      "category": 1,
+      "date": "20.05.2020 12:37:57",
+      "description": " Оплата за інтернет",
+      "id": 5
     }
   ]
 }

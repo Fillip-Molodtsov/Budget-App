@@ -1,3 +1,4 @@
+// робоча модель запису
 export class MyEvent {
     constructor(
         public type: string,

@@ -7,7 +7,7 @@ import {AuthService} from '../../shared/auth.service';
 import {ActivatedRoute, Params, Router} from '@angular/router';
 import {fadeStateTrigger} from '../../shared/animations/fade.animation';
 import {LoginForm} from '../../shared/models/loginForm.model';
-
+// налаштування входу
 @Component({
     selector: 'app-login',
     templateUrl: './login.component.html',
@@ -28,10 +28,10 @@ export class LoginComponent implements OnInit {
         this.message = new Message('danger', '');
         this.route.queryParams.subscribe((params: Params) => {
             if (params.permission) {
-                this.showMessage('Вы вошли в систему', 'success');
+                this.showMessage('Ви ввійшли в систему', 'success');
             }
             if (params.isDenied) {
-                this.showMessage('Требуется вход в систему', 'warning');
+                this.showMessage('Потрібен вхід в систему', 'warning');
             }
         });
         this.form = new FormGroup({
@@ -58,10 +58,10 @@ export class LoginComponent implements OnInit {
                     window.localStorage.setItem('user', JSON.stringify(user));
                     this.router.navigate(['/system', 'bill']);
                 } else {
-                    this.showMessage('Пароль введен некорректно', 'danger');
+                    this.showMessage('Пароль введено некоректно', 'danger');
                 }
             } else {
-                this.showMessage('Пользователь не найден', 'danger');
+                this.showMessage('Користувача не знайдено', 'danger');
             }
         });
     }

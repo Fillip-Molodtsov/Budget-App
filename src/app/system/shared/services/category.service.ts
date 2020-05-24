@@ -3,7 +3,7 @@ import {HttpClient} from '@angular/common/http';
 import {ApiService} from './api.service';
 import {Category} from '../models/category.model';
 import {Observable} from 'rxjs';
-
+// налаштування для сторінки категорії
 @Injectable({
     providedIn: 'root'
 })

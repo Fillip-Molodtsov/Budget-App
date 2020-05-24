@@ -3,7 +3,7 @@ import {BillPageService} from '../shared/services/bill-page.service';
 import {forkJoin, Subscription} from 'rxjs';
 import {Bill} from '../shared/models/bill.model';
 import {delay} from 'rxjs/operators';
-
+// налаштування головної сторінки
 @Component({
     selector: 'app-bill-page',
     templateUrl: './bill-page.component.html',

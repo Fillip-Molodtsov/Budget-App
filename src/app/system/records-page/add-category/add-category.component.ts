@@ -4,6 +4,7 @@ import {Category} from '../../shared/models/category.model';
 import {CategoryService} from '../../shared/services/category.service';
 import {Subscription} from 'rxjs';
 
+// додавання запису
 @Component({
     selector: 'app-add-category',
     templateUrl: './add-category.component.html',

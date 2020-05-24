@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {Category} from '../shared/models/category.model';
 import {CategoryService} from '../shared/services/category.service';
-
+// налаштування сторінки записів
 @Component({
     selector: 'app-records-page',
     templateUrl: './records-page.component.html',

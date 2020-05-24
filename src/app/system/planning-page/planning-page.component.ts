@@ -6,7 +6,7 @@ import {Bill} from '../shared/models/bill.model';
 import {Category} from '../shared/models/category.model';
 import {MyEvent} from '../shared/models/myEvent.model';
 import {forkJoin} from 'rxjs';
-
+// Сторінка планування
 @Component({
     selector: 'app-planning-page',
     templateUrl: './planning-page.component.html',

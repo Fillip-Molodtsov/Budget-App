@@ -1,5 +1,5 @@
 import {animate, style, transition, trigger} from '@angular/animations';
-
+// реалізація анімації
 export const fadeStateTrigger = trigger('fade', [
     transition(':enter', [
         style({

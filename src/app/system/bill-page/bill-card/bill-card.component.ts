@@ -1,6 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {Bill} from '../../shared/models/bill.model';
-
+// курс валют
 @Component({
     selector: 'app-bill-card',
     templateUrl: './bill-card.component.html',
